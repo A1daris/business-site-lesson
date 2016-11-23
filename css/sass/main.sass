@@ -1,0 +1,227 @@
+@import "bourbon/bourbon"
+
+@font-face
+	font-family: 'Harabara'
+	src: url('../fonts/Harabara/Harabara.ttf') format('truetype')
+	font-style: normal
+	font-weight: normal
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	margin: 0
+
+a
+	color: #fdab37
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+.top_menu_bg
+	background: url("img/topnav_bg.png") top left repeat-x
+	height: 103px
+	.logo
+		display: block
+		margin-top: 22px
+		margin-left: 40px
+.main_menu
+	margin: 0
+	padding: 0
+	padding-left: 52px
+	list-style-type: none
+	li
+		float: left
+		margin: 0
+		position: relative
+		a
+			display: block
+			font-family: Harabara, arial
+			font-size: 19px
+			color: #fff
+			text-shadow: rgba(0, 0, 0, .6) 1px 2px
+			background-image: url(../img/divider.png)
+			background-repeat: repeat-y
+			padding: 65px 26px 8px 26px
+		a.active
+			color: #fdab37
+.main_menu li:last-child
+	background-image: url(../img/divider.png)
+	background-repeat: repeat-y
+	background-position: top right
+.main_menu .top_hover
+	position: absolute
+	width: 0
+	height: 4px
+	left: 50%
+	bottom: -4px
+	transition: all .25s ease
+.main_menu li a.active .top_hover,	
+.main_menu li:hover .top_hover	
+	background-color: #fdab37
+	width: 100%
+	left: 0
+.main_menu li a:hover
+	color: #fdab37
+
+.main_header
+	background-image: url("../img/check_bg_2.png"), url("../img/bg_1.png")
+	.head_bg
+		position: relative
+		height: 500px
+		background-image: url(../img/blik.png), url(../img/abstract.png)
+		background-repeat: no-repeat, no-repeat
+		background-position: center top
+
+	h1
+		color: #f69537
+		font-family: "Harabara", Helvetica, arial, sans serif
+		font-size: 66px
+		font-weight: 700
+		text-transform: uppercase
+		margin: 45px 0 0 
+		line-height: 82px
+		padding-bottom: 20px
+		text-shadow: 2px 2px 0 #111111
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		list-style-position: inside
+		list-style-image: url("img/galka.png")
+		margin-left: -5px
+		
+		li
+			color: white
+			font-family: "Myriad Pro"
+			font-size: 28px
+			font-weight: 700
+			line-height: 40px
+	a
+		border: 1px solid transparent
+		padding: 0 5px
+		display: block
+.header_list a:hover
+	border: 1px solid #fff
+	.left_arrow
+		display: inline
+		padding: 0
+		margin: 0
+		border: 0
+	.right_arrow
+		display: inline
+		padding: 0
+		margin: 0
+		border: 0
+	.yellow_btn
+		margin: 0
+		padding: 0
+		display: inline
+.people_wrap
+	position: relative
+	height: 500px
+.people
+	position: absolute
+	bottom: 0
+.btn_wrap
+	position: absolute
+	bottom: -39px
+	left: 89px
+	width: 605px
+	height: 73px
+	z-index: 100
+.left_arrow_2
+	display: block
+	width: 25px
+	height: 100%
+	background-image: url(../img/arrow_2.png)
+	background-position: left center
+	background-repeat: no-repeat
+	float: left
+.right_a
+	background-image: url(../img/arrow_2.png) 25px 0
+	background-position: left center
+.button_2
+	float: left
+	text-shadow: 0.8px 0.6px 2px rgba(0, 0, 0, 0.5)
+	color: #fff
+	font-family: Harabara
+	font-size: 26px
+	font-weight: 200
+	padding: 17px	45px
+	background-image: url(../img/glance.png), url(../img/button_2.png) 
+	background-repeat: no-repeat, repeat
+	background-position: right top, left top
+	border: 1px solid
+	border-radius: 3px
+	border-image: url(../img/button_brd.png) 30 stretch
+.button_wrap
+	position: absolute
+	bottom: -39px
+	left: 89px
+	color: #fff
+	z-index: 5
+.h_line
+	height: 7px
+	background: url("img/mid_bg_light.png") repeat-x
+	box-shadow: 0 0 4px #111111
+	position: relative
+	z-index: 1
+.mid_bg
+	background: url("img/mid_bg.png") repeat
+	padding: 70px 40px 40px
+	.light_bg
+		background: url("img/mid_bg_light.png")
+		padding: 45px 0 35px
+.item_wrap
+	text-align: center
+	h2
+		color: #ddd
+		font-family: "Myriad Pro"
+		font-size: 30px
+		font-weight: 400
+		padding: 0
+		margin-bottom: 6px
+	p
+		padding: 0
+		margin: 0
+		color: #aeaeae
+		font-family: "Myriad Pro"
+		font-size: 17px
+		font-weight: 400
+		line-height: 22px
+.footer
+	background: url("img/footer_bg.png")
+	height: 159px
+.footer_menu
+	padding: 70px 0
+	text-align: right
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0 20px 0 0
+	li
+		display: inline-block
+		padding-left: 30px
+	a
+		text-shadow: 1.6px 1.2px 2px rgba(0, 0, 0, 0.75)
+		color: white
+		font-family: "Open Sans"
+		font-size: 18px
+		font-weight: 400
+	a:hover
+		color: grey
+	.active
+		color: #f69537
